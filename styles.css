@@ -1,0 +1,859 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Windows 11 Navbar Styles */
+.win11-navbar {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0078d7;
+}
+
+.logo i {
+    margin-right: 10px;
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    position: relative;
+    padding: 8px 0;
+}
+
+.nav-links li a {
+    color: #444;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+.nav-links li a:hover {
+    color: #0078d7;
+    background-color: rgba(0, 120, 215, 0.1);
+}
+
+.nav-links li.active a {
+    color: #0078d7;
+    background-color: rgba(0, 120, 215, 0.1);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    padding: 5px 15px;
+    max-width: 250px;
+}
+
+.search-bar input {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 100%;
+    color: #444;
+}
+
+.search-bar button {
+    background: transparent;
+    border: none;
+    color: #666;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 5%;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 500px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #0078d7;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-block;
+    background-color: #0078d7;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 120, 215, 0.25);
+}
+
+.btn-primary:hover {
+    background-color: #0063b1;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 120, 215, 0.3);
+}
+
+/* Features Section */
+.features {
+    padding: 80px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card i {
+    font-size: 3rem;
+    color: #0078d7;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.feature-card p {
+    color: #666;
+}
+
+/* Call to Action Section */
+.cta {
+    background: linear-gradient(135deg, #0078d7 0%, #00a2ff 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 5%;
+    margin: 50px 0;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta .btn-primary {
+    background-color: white;
+    color: #0078d7;
+}
+
+.cta .btn-primary:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #f5f5f5;
+    padding: 60px 5% 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-logo i {
+    margin-right: 10px;
+    font-size: 1.8rem;
+}
+
+.footer-links h4, .footer-contact h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #0078d7;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a:hover {
+    color: #0078d7;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact p i {
+    margin-right: 10px;
+    color: #0078d7;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Downloads Page Styles */
+.downloads-hero, .support-hero {
+    background: linear-gradient(135deg, #0078d7 0%, #00a2ff 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 5%;
+}
+
+.downloads-hero h1, .support-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.downloads-hero p, .support-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.downloads-section {
+    padding: 60px 0;
+}
+
+.software-category {
+    margin-bottom: 60px;
+}
+
+.software-category h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+}
+
+.software-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.software-card {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.software-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.software-icon {
+    background: #0078d7;
+    color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.software-icon i {
+    font-size: 3rem;
+}
+
+.software-info {
+    padding: 30px;
+    flex: 1;
+}
+
+.software-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.software-info p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.software-meta {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.software-meta span {
+    display: flex;
+    align-items: center;
+}
+
+.software-meta i {
+    margin-right: 5px;
+}
+
+.software-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-download {
+    background-color: #0078d7;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-download i {
+    margin-right: 8px;
+}
+
+.btn-download:hover {
+    background-color: #0063b1;
+}
+
+.btn-details {
+    border: 1px solid #0078d7;
+    color: #0078d7;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-details:hover {
+    background-color: rgba(0, 120, 215, 0.1);
+}
+
+.version-table {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.version-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.version-table th, .version-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.version-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+}
+
+.version-table tr:last-child td {
+    border-bottom: none;
+}
+
+.version-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+.btn-sm-download {
+    background-color: #0078d7;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-sm-download i {
+    margin-right: 5px;
+}
+
+.btn-sm-download:hover {
+    background-color: #0063b1;
+}
+
+.system-requirements {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.system-requirements h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.requirements-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.requirements-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    flex: 1;
+    min-width: 280px;
+}
+
+.requirements-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #0078d7;
+}
+
+.requirements-card ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #666;
+}
+
+.requirements-card ul li {
+    margin-bottom: 10px;
+}
+
+.requirements-card ul li strong {
+    color: #333;
+}
+
+/* Support Page Styles */
+.faq-section {
+    padding: 60px 0;
+}
+
+.faq-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #333;
+}
+
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #f8f9fa;
+}
+
+.accordion-header h3 {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.accordion-icon {
+    color: #0078d7;
+}
+
+.accordion-content {
+    padding: 0 20px 20px;
+    display: none;
+    border-top: 1px solid #e9ecef;
+}
+
+.accordion-content p {
+    color: #666;
+}
+
+.accordion-content a {
+    color: #0078d7;
+    text-decoration: underline;
+}
+
+.contact-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-section > p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #666;
+}
+
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contact-card i {
+    font-size: 3rem;
+    color: #0078d7;
+    margin-bottom: 20px;
+}
+
+.contact-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-card p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.btn-contact {
+    display: inline-block;
+    color: #0078d7;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+    color: #0063b1;
+    text-decoration: underline;
+}
+
+.contact-form {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-form > p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #666;
+}
+
+.contact-form form {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #0078d7;
+    outline: none;
+}
+
+/* Feature Card Animation */
+.feature-card.animated {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    
+    .feature-cards {
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .software-card {
+        flex-direction: column;
+    }
+    
+    .software-icon {
+        padding: 20px;
+    }
+    
+    .requirements-grid {
+        flex-direction: column;
+    }
+    
+    .contact-card {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .search-bar {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .downloads-hero h1, .support-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .software-meta {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .software-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .version-table {
+        overflow-x: auto;
+    }
+    
+    .contact-form form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .feature-card {
+        min-width: 100%;
+    }
+} 

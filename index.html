@@ -1,31 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Executive - All the Latest News, Latest Software and Tutorials Here</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Software Download Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
     <header>
-        <div class="title_logo">
-            <div class="nav_logo">
-                <img src="Executable.png" alt="">
-            </div>
-            <div class="header_h1">
-                <h1>Executive</h1>
-            </div>
-        </div>
-        <nav>
-            <div class="nav_links">
-                <a href="#"></a>
-                <a href=""></a>
-                <a href=""></a>
+        <nav class="win11-navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-cube"></i>
+                    <span>Software Hub</span>
+                </div>
+                <ul class="nav-links">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
             </div>
         </nav>
     </header>
-</body>
 
-</html>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Download Our Software</h1>
+                <p>Fast, reliable, and secure software solutions for your needs</p>
+                <a href="downloads.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/software-screenshot.png" alt="Software Screenshot">
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Key Features</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Lightning Fast</h3>
+                    <p>Optimized for speed and performance</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Secure</h3>
+                    <p>Built with security as a priority</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-user-friends"></i>
+                    <h3>User Friendly</h3>
+                    <p>Intuitive interface for all users</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Ready to upgrade your experience?</h2>
+            <p>Download our software today and see the difference</p>
+            <a href="downloads.html" class="btn-primary">Download Now</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-cube"></i>
+                <span>Software Hub</span>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="downloads.html">Downloads</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-envelope"></i> support@softwarehub.com</p>
+                <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Software Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
